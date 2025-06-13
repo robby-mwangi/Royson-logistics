@@ -1,0 +1,221 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  overflow-x: hidden;
+  background: #18345a;
+}
+
+/* Background image with reduced brightness */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('image/WhatsApp Image 2025-06-09 at 12.51.40 PM.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  filter: brightness(0.7) blur(1px);
+  z-index: -2;
+}
+
+/* Overlay for readability */
+.overlay {
+  background: linear-gradient(135deg, rgba(13,27,42,0.7) 60%, rgba(25,118,210,0.4) 100%);
+  min-height: 100vh;
+  padding-bottom: 0;
+  z-index: 1;
+  position: relative;
+}
+
+/* General Container */
+.container {
+  width: 92%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 24px 28px;
+  background: rgba(0,0,0,0.32);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(13,71,161,0.13);
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background: transparent;
+  color: white;
+  padding: 32px 0 12px 0;
+  text-align: center;
+  border-radius: 0 0 16px 16px;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 4px;
+  text-shadow: 0 2px 12px #1976d2;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+nav a {
+  color: #bbdefb;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.2s, background 0.2s;
+  padding: 6px 16px;
+  border-radius: 6px;
+}
+
+nav a:hover {
+  color: #fff;
+  background: #1976d2;
+}
+
+/* Hero Section */
+.hero {
+  padding: 80px 0 60px 0;
+  text-align: center;
+  background: linear-gradient(120deg, rgba(25,118,210,0.85) 60%, rgba(13,71,161,0.7) 100%);
+  border-radius: 18px;
+  margin-bottom: 36px;
+  box-shadow: 0 4px 24px rgba(25,118,210,0.10);
+}
+
+.hero h2 {
+  font-size: 2.8rem;
+  margin-bottom: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fff;
+  text-shadow: 0 2px 12px #1976d2;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  color: #bbdefb;
+  margin-bottom: 28px;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: #1976d2;
+  color: #fff;
+  padding: 14px 38px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 12px rgba(25,118,210,0.18);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+.cta-btn:hover {
+  background: #1565c0;
+  color: #bbdefb;
+  transform: translateY(-2px) scale(1.03);
+}
+
+/* Section Styling */
+.section {
+  padding: 40px 0 30px 0;
+  margin-bottom: 28px;
+  background: rgba(25, 118, 210, 0.10);
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(25,118,210,0.07);
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  color: #90caf9;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px #1976d2;
+}
+
+.services-list {
+  list-style: disc;
+  padding-left: 28px;
+  color: #e3f2fd;
+  font-size: 1.1rem;
+  columns: 2;
+  column-gap: 40px;
+}
+
+.services-list li {
+  margin-bottom: 10px;
+  transition: color 0.2s;
+}
+.services-list li:hover {
+  color: #1976d2;
+}
+
+.contact a {
+  color: #bbdefb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+  color: #1976d2;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(90deg, #0d47a1 70%, #1976d2 100%);
+  text-align: center;
+  padding: 18px 0;
+  margin-top: 40px;
+  color: #bbdefb;
+  font-size: 1rem;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 -2px 12px rgba(25,118,210,0.10);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .container {
+    padding: 12px 6px;
+  }
+  .services-list {
+    columns: 1;
+    padding-left: 18px;
+  }
+  .hero h2 {
+    font-size: 2rem;
+  }
+  .section h2 {
+    font-size: 1.3rem;
+  }
+  nav ul {
+    gap: 16px;
+  }
+}
