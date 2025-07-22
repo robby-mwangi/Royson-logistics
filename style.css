@@ -5,9 +5,10 @@
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   height: 100%;
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
   color: #fff;
   position: relative;
   overflow-x: hidden;
@@ -22,7 +23,8 @@ body::before {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: url('image/WhatsApp Image 2025-06-09 at 12.51.40 PM.jpeg') no-repeat center center fixed;
+  background: url("image/WhatsApp Image 2025-06-09 at 12.51.40 PM.jpeg")
+    no-repeat center center fixed;
   background-size: cover;
   filter: brightness(0.7) blur(1px);
   z-index: -2;
@@ -30,7 +32,11 @@ body::before {
 
 /* Overlay for readability */
 .overlay {
-  background: linear-gradient(135deg, rgba(13,27,42,0.7) 60%, rgba(25,118,210,0.4) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(13, 27, 42, 0.7) 60%,
+    rgba(25, 118, 210, 0.4) 100%
+  );
   min-height: 100vh;
   padding-bottom: 0;
   z-index: 1;
@@ -43,9 +49,9 @@ body::before {
   max-width: 1100px;
   margin: auto;
   padding: 24px 28px;
-  background: rgba(0,0,0,0.32);
+  background: rgba(0, 0, 0, 0.32);
   border-radius: 16px;
-  box-shadow: 0 8px 32px rgba(13,71,161,0.13);
+  box-shadow: 0 8px 32px rgba(13, 71, 161, 0.13);
 }
 
 .header-container {
@@ -102,10 +108,14 @@ nav a:hover {
 .hero {
   padding: 80px 0 60px 0;
   text-align: center;
-  background: linear-gradient(120deg, rgba(25,118,210,0.85) 60%, rgba(13,71,161,0.7) 100%);
+  background: linear-gradient(
+    120deg,
+    rgba(25, 118, 210, 0.85) 60%,
+    rgba(13, 71, 161, 0.7) 100%
+  );
   border-radius: 18px;
   margin-bottom: 36px;
-  box-shadow: 0 4px 24px rgba(25,118,210,0.10);
+  box-shadow: 0 4px 24px rgba(25, 118, 210, 0.1);
 }
 
 .hero h2 {
@@ -132,7 +142,7 @@ nav a:hover {
   font-size: 1.1rem;
   font-weight: 600;
   text-decoration: none;
-  box-shadow: 0 2px 12px rgba(25,118,210,0.18);
+  box-shadow: 0 2px 12px rgba(25, 118, 210, 0.18);
   transition: background 0.2s, color 0.2s, transform 0.2s;
 }
 .cta-btn:hover {
@@ -145,9 +155,9 @@ nav a:hover {
 .section {
   padding: 40px 0 30px 0;
   margin-bottom: 28px;
-  background: rgba(25, 118, 210, 0.10);
+  background: rgba(25, 118, 210, 0.1);
   border-radius: 14px;
-  box-shadow: 0 2px 12px rgba(25,118,210,0.07);
+  box-shadow: 0 2px 12px rgba(25, 118, 210, 0.07);
 }
 
 .section h2 {
@@ -197,7 +207,7 @@ footer {
   color: #bbdefb;
   font-size: 1rem;
   border-radius: 12px 12px 0 0;
-  box-shadow: 0 -2px 12px rgba(25,118,210,0.10);
+  box-shadow: 0 -2px 12px rgba(25, 118, 210, 0.1);
 }
 
 /* Responsive Design */
